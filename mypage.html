@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+    <style>
+        /* พื้นหลังแบบไล่สี */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* กล่องเนื้อหา */
+        .container {
+            max-width: 90%;
+            width: 400px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+            color: #333;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* สไตล์รูปโปรไฟล์ */
+        .profile-img {
+            width: 100px;
+            border-radius: 50%;
+            border: 4px solid #764ba2;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* ปุ่มโซเชียลมีเดีย */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap; /* ทำให้ปุ่มไม่ล้นจอ */
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background: #764ba2;
+        }
+
+        /* ปรับแต่งสำหรับหน้าจอมือถือ */
+        @media (max-width: 480px) {
+            .container {
+                width: 90%; /* ให้กว้างเต็มจอมากขึ้น */
+                padding: 20px;
+            }
+
+            .profile-img {
+                width: 80px; /* ลดขนาดรูปภาพ */
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .social-buttons a {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="your-image.jpg" alt="รูปโปรไฟล์" class="profile-img">
+    <h1>สวัสดี! ฉันคือ [ชื่อของคุณ]</h1>
+    <p>ฉันเป็น [ระบุอาชีพ/งานอดิเรก] ที่สนใจเกี่ยวกับ [หัวข้อที่คุณสนใจ]</p>
+    <p>เป้าหมายของฉันคือ [ระบุเป้าหมายหรือสิ่งที่คุณต้องการทำ]</p>
+    
+    <!-- ปุ่มโซเชียลมีเดีย -->
+    <div class="social-buttons">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</div>
+
+</body>
+</html>
